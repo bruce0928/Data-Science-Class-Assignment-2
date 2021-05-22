@@ -1,11 +1,19 @@
 # Data-Science-Class-Assignment-2
-Iris classification (using MLflow and Docker )
+Iris classification
 
-FROM jupyter/datascience-notebook
+1.dockerfile
 
-RUN pip install mlflow
+(1)dockerfile內容
 
-EXPOSE 5050
+    FROM jupyter/datascience-notebook
 
-docker build -t jupter_notebook_MLflow . --no-cache
-docker run -p 8888:8888 jupter_notebook_mlflow
+    RUN pip install mlflow
+
+    EXPOSE 5050
+
+(2)利用dockerfile在local建立image:
+
+在cmd執行以下指令:
+    
+    docker build -t jupter_notebook_MLflow . --no-cache
+    docker run -p 8888:8888 jupter_notebook_mlflow

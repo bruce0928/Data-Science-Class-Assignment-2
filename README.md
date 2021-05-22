@@ -11,7 +11,7 @@ Iris classification
 
     EXPOSE 5050
 
-(2)利用dockerfile在local建立image:
+(2)利用dockerfile在local建立image並建立新的container:
 
 在cmd執行以下指令:
     
